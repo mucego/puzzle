@@ -1,0 +1,3 @@
+./keyhunt -m bsgs -f tests/135.txt -n 0x100000000000 -R -s 10 -k 1024 -t 24 -6 -e -S -r 4000000000000000000000000000000000:4fffffffffffffffffffffffffffffffff
+
+./keyhunt -m bsgs -f tests/135.txt -n 0x100000000000 -R -s 10 -k 1536 -t 24 -6 l compress -e -S -r 6100000000000000000000000000000000:68ffffffffffffffffffffffffffffffff
