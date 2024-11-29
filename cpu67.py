@@ -71,8 +71,8 @@ with open(output_sh_path, 'w') as sh_file, open(historico_path, 'a') as historic
 
         # Gerar comandos no formato especificado
         sh_file.write(f"echo 'Iniciando processo {i} com range {range_completo}'\n")
-        sh_file.write(f"timeout 300s ./keyhunt -m rmd160 -f tests/67.rmd -n 102400 -R -l compress -s 3 -t 24 -e -S {out_file_path} -r {range_completo} \n")
-        sh_file.write("sleep 10\n")
+        sh_file.write(f"timeout 240s ./keyhunt -m rmd160 -f tests/67.rmd -n 102400 -R -l compress -s 5 -t 192 -e -S {out_file_path} -r {range_completo} \n")
+        sh_file.write("sleep 5\n")
         sh_file.write("pkill -f keyhunt\n\n")
         
         # Adicionar verificação do arquivo de saída
